@@ -17,7 +17,7 @@ async function searchMovies(){
 
   try{
     let input= document.getElementById("search").value;
-    const res = await fetch(`http://www.omdbapi.com/?apikey=650c441&s=${input}`)
+    const res = await fetch(`https://www.omdbapi.com/?apikey=650c441&s=${input}`)
   
     let data = await res.json()
     console.log(data)
